@@ -4,9 +4,10 @@ import smtplib
 
 account_sid = 'ACf4f7f6195d9a802477e8f551eff6b45d'
 auth_token = '3a8bee5b077481d4a81afa6634c2bb5a'
+client = Client(account_sid, auth_token)
+twilio_num = '+14706169780'
+target = '+919004244603'
 
-twilio_number = '+14706169780'
-target_number = '+919004244603'
 
 def generate_otp():
     return str(random.randint(100000, 999999))
